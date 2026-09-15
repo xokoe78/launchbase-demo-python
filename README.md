@@ -63,3 +63,6 @@ For local testing, use a development database and test the email button on your 
 Procfile runs Gunicorn on 0.0.0.0:$PORT. Use Gunicorn in production; python app.py is for local development.
 
 Public showcase visitors should only enter sample data. This template intentionally has no payment collection, shared team access or file uploads. Those require additional product-specific rules and tests.
+
+## Adding payments
+This template does not enable customer billing by default. Read https://launchbase.build/docs/payments.md to add managed checkout, plans, saved cards, subscriptions, invoices, events and paid access. Your backend uses the app-only LB_RUNTIME_TOKEN, derives customerRef from its verified user session, and keeps credentials server-only. Start in test mode; the owner activates live payments. No Stripe secret key is needed in managed mode. Test customer isolation and cancellation before launch.
