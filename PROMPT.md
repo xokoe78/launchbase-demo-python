@@ -1,0 +1,1 @@
+Read AGENTS.md and https://launchbase.build/agent.md. Connect to my Launchbase account or help me create one, then configure and deploy this template as a new app using the included schema and runtime setup instructions. Verify login, private requests and the test email, give me the live URL, and ask what I want to change.
