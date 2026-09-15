@@ -43,7 +43,7 @@ Apply `schema.sql` to your own development Supabase database, and allow `http://
 | LB_RUNTIME_URL | Launchbase runtime endpoint |
 | LB_RUNTIME_TOKEN | Server-only app token for verified-user test emails |
 
-Your agent calls `POST /api/v1/projects/{id}/runtime` after provisioning to inject runtime access. Secret values are not returned. These variables take effect on the next deployment. You do not need Railway, Resend or Supabase management keys in the app.
+Your agent calls `POST /api/v1/apps/{id}/runtime` after provisioning to inject runtime access. Secret values are not returned. These variables take effect on the next deployment. You do not need Railway, Resend or Supabase management keys in the app.
 
 For local testing, use a development database and test the email button on your deployed app. Do not copy your agent management token into LB_RUNTIME_TOKEN. BYOK email accounts are configured in Launchbase, not embedded into frontend code.
 
